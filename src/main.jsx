@@ -11,7 +11,7 @@ const programs = [
   { image: 'package-ramadan.png', tag: 'MOMEN ISTIMEWA', title: 'Umroh Ramadhan', copy: 'Rasakan nikmatnya menjalankan ibadah di Tanah Suci pada bulan Ramadhan.' },
   { image: 'package-turkey.png', tag: 'PERJALANAN PILIHAN', title: 'Umroh Plus Hainan', copy: 'Perjalanan umroh dengan pengalaman tambahan yang berkesan.' },
 ];
-function Logo() { return <a className="logo" href="#beranda" aria-label="Amanah Tour, kembali ke beranda"><img src={assets + 'amanah-logo.png'} alt="Logo Amanah Tour"/><span>AMANAH<small>TOUR</small></span></a>; }
+function Logo() { return <a className="logo" href="#beranda" aria-label="Amanah Tour, kembali ke beranda"><img src={assets + 'amanah-logo-wide.png'} alt="Amanah Tour & Travel"/></a>; }
 function Button({ children, href = whatsapp, secondary = false }) { return <a className={`button ${secondary ? 'secondary' : ''}`} href={href} {...(href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}>{children}<ArrowRight size={17}/></a>; }
 function App() {
   const [open, setOpen] = useState(false);
